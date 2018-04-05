@@ -11,3 +11,20 @@
   Hint: Per generare un numero casuale utlizza la funzione javascript random, restituisce un intervallo compreso tra 0 e 1 che necessita di essere convertito per il tuo intervallo.
   http://www.imparareaprogrammare.it
 */
+
+
+function numerorandom() {
+  return Math.floor(Math.random()*90);
+}
+
+var estrazione = [];
+
+
+do {
+    estrazione.push(numerorandom());
+    if (estrazione[1]=[2]=) {
+      
+    }
+} while (estrazione.length < 5);
+
+console.log(estrazione);
