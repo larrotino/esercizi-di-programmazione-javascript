@@ -13,12 +13,18 @@ var media = valori.reduce(accumulatore)/valori.length;
 
 
 //metodo filter crea una variabile con solo gli elementi filtrati
+var filtrati = valori.filter(valore=>valore<media)
+
+/*
+//vecchia formula
+
 var filtrati = valori.filter(
   function evenNumbers (valore) {
     return valore < media;
   }
 )
-
+*/
 console.log(filtrati);
 console.log(filtrati.length+'quantità valori minori alla media');
 console.log(Math.abs(filtrati.length-valori.length)+'quantità valori minori alla media');
+
