@@ -7,12 +7,11 @@
   http://www.imparareaprogrammare.it
 */
 
-var catsnumbers = 44;
-var catsinarow = 6;
+var time = 172917225171;
 
-var row = Math.ceil(catsnumbers/catsinarow);
-var lostcats = row*catsinarow-catsnumbers;
+var ore = Math.floor(time/60/60);
+var minutes = Math.floor(time/60)-(ore*60);
+var seconds = time-(ore*60*60)-(minutes*60);
 
-console.log("le colonne di gatti sono" + row);
-console.log("mentre i gatti non in fila sono" + lostcats);
-console.log(`le colonne dei gatti sono ${row} mentre i posti liberi sono ${lostcats}`);
+
+console.log(`${time} secondi sonno ${ore} ore, ${minutes} minuti e ${seconds} secondi.`);
