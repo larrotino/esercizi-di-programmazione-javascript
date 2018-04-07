@@ -12,3 +12,31 @@
   Scriverne una versione che anziché i giorni della settimana, visualizzi i nomi dei mesi.
   http://www.imparareaprogrammare.it
 */
+
+var input = Math.round(Math.random()*8);
+
+console.log(`valore é ${input}`);
+
+switch (input) {
+  case 1:
+    console.log('oggi è Lunedì');
+    break;
+  case 2:
+    console.log('oggi è Martedì');
+    break;
+  case 3:
+    console.log('oggi è mercoledì');
+  case 4:
+    console.log('oggi è giovedì');
+    break;
+  case 5:
+    console.log('oggi è venerdì');
+    break;
+  case 6:
+    console.log('oggi è sabato');
+    break;
+  case 7:
+    console.log('oggi è domenica');
+  default:
+    console.log('valore non valido');
+}
