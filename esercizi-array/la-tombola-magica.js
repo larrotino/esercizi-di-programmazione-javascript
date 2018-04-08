@@ -19,12 +19,21 @@ function numerorandom() {
 
 var estrazione = [];
 
-
+// assegna numeri random all array controllando che non si ripetano.
 do {
-    estrazione.push(numerorandom());
-    if (estrazione[1]=[2]=) {
-      
+    estrazione.unshift(numerorandom());
+    
+    if (estrazione[0]==[1] || estrazione[0]==[2] || estrazione[0]==[3] || estrazione[0]==[4]) {
+      estrazione.shift();
     }
 } while (estrazione.length < 5);
 
-console.log(estrazione);
+console.log(`numeri estratti: `+estrazione);
+
+var giocata = [32,54,2,12,67];
+
+var vittoria = giocata.filter(function (elementi){
+  return elementi == estrazione; 
+})
+
+console.log(vittoria);
