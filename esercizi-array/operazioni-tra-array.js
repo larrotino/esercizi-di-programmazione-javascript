@@ -17,11 +17,11 @@ var numeri2 = new Array (5);
 
 //riempi con numeri casuali gli array
 for (var i = 0; i < numeri1.length; i++) {
-  numeri1[i]=(Math.floor(Math.random()*10));
+  numeri1[i]=Math.floor(Math.random()*10);
 }
 
 for (var i = 0; i < numeri2.length; i++) {
-  numeri2[i]=(Math.floor(Math.random()*10));
+  numeri2[i]=Math.floor(Math.random()*10);
 }
 
 console.log(numeri1);
