@@ -6,3 +6,29 @@
   Hint: Per generare un numero casuale utlizza la funzione javascript random, che restituisce un intervallo compreso tra 0 e 1 che necessita di essere convertito per il tuo intervallo.
   http://www.imparareaprogrammare.it
 */
+
+
+var numeri = new Array(100);
+
+for (var i = 0; i < numeri.length; i++) {
+  numeri[i] =  Math.floor(Math.random() * 50)
+}
+
+console.log(numeri);
+
+var utente = [5,2,6,8];
+
+for (var i = 0; i < utente.length; i++) {
+
+  for (var l = 0; l < numeri.length; l++) {
+    if (utente[i]==numeri[l]) {
+      numeri[l] = 0;
+    } else if (Number.isInteger(numeri[l]/utente[i])) {
+      numeri[l] = 0;
+    }
+    
+  }
+  
+}
+
+console.log(numeri);
