@@ -11,3 +11,18 @@
     
   http://www.imparareaprogrammare.it
 */
+
+
+var valori = [0,1,2,3,4,5,6,7,8,9,10];
+
+var risultati = [[],[],[],[],[],[],[],[],[],[],[]];
+
+for (var l = 0; l < valori.length; l++) {
+  for (var i = 0; i < valori.length; i++) {
+    risultati[l][i] = valori[l]*valori[i];
+  }
+}
+
+var spazio = ' | ';
+
+//to do =  il consol log matrice
